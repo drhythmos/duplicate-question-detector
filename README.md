@@ -29,5 +29,33 @@ In this project, we classify question pairs as duplicates or non-duplicates usin
 We use the Quora Question Pairs dataset, which contains pairs of questions and a label indicating whether the questions are duplicates or not.
 
 - Dataset:- [Quora Question Pairs.](https://www.kaggle.com/datasets/algorhythmdhiman/quora-duplicate-questions-copy)
+## Text Preprocessing
+Text preprocessing is an essential step for cleaning and preparing the text data for modeling:
 
+- Tokenization: Splitting text into individual words or subwords.
+- Lowercasing: Ensuring uniformity by converting text to lowercase.
+- Stop Words Removal: Eliminating non-contributory words like "is", "the", etc.
+- Stemming/Lemmatization: Reducing words to their base form.
+- Special Character Removal: Cleaning the text by removing unwanted characters. 
+## Feature Engineering
+#### Basic Features:
+- q1_len, q2_len: Character lengths of the two questions.
+- q1_words, q2_words: Word count in each question.
+- words_common: Common words between both questions.
+- words_total: Total number of words in both questions combined.
+- word_share: Ratio of common words to total words.
+#### Token Features:
+- cwc_min, cwc_max: Ratios of common words to smaller and larger question lengths.
+- csc_min, csc_max: Ratios of common stop words to smaller and larger stop word counts.
+- first_word_eq, last_word_eq: Binary features indicating if the first or last words of the questions are the same.
+#### Length-Based Features:
+- mean_len: Average length of the two questions.
+- abs_len_diff: Absolute difference in word count between the two questions.
+- longest_substr_ratio: Ratio of the longest common substring to the smaller question length.
+#### Fuzzy Features:
+- fuzz_ratio, fuzz_partial_ratio, token_sort_ratio, token_set_ratio: Various fuzzy similarity scores between the questions.
+## Model Evaluation
+The models are evaluated using accuracy and confusion matrices to assess performance. The best-performing model (DistilBERT) achieved a significant improvement in accuracy compared to traditional models (BoW with Random Forest).
+- Approach 1: Random Forest (81.67%) and
+- Approach2: DistilBERT (89.89%)
 
