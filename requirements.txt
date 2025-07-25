@@ -1,0 +1,9 @@
+numpy
+pandas
+streamlit
+distance
+nltk
+scipy==1.12
+fuzzywuzzy
+scikit-learn==1.2.2
+python-Levenshtein
