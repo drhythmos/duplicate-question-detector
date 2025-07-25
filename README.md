@@ -25,3 +25,9 @@ In this project, we classify question pairs as duplicates or non-duplicates usin
 - DistilBERT significantly outperformed the traditional methods, achieving 89.89% accuracy, which is a substantial improvement over BoW-based models. It effectively understands the contextual relationships between questions and handles variations in phrasing, making it highly suitable for detecting semantic duplicates.
 #### Key Benefit: 
 - Unlike traditional models, DistilBERT benefits from deep learning's ability to understand nuances in sentence structure and context, which is particularly useful for detecting semantically similar questions even if they are phrased differently.
+## Datasets
+We use the Quora Question Pairs dataset, which contains pairs of questions and a label indicating whether the questions are duplicates or not.
+
+- Dataset:- [Quora Question Pairs.](https://www.kaggle.com/datasets/algorhythmdhiman/quora-duplicate-questions-copy)
+
+
