@@ -29,14 +29,6 @@ In this project, we classify question pairs as duplicates or non-duplicates usin
 We use the Quora Question Pairs dataset, which contains pairs of questions and a label indicating whether the questions are duplicates or not.
 
 - Dataset:- [Quora Question Pairs.](https://www.kaggle.com/datasets/algorhythmdhiman/quora-duplicate-questions-copy)
-## Text Preprocessing
-Text preprocessing is an essential step for cleaning and preparing the text data for modeling:
-
-- Tokenization: Splitting text into individual words or subwords.
-- Lowercasing: Ensuring uniformity by converting text to lowercase.
-- Stop Words Removal: Eliminating non-contributory words like "is", "the", etc.
-- Stemming/Lemmatization: Reducing words to their base form.
-- Special Character Removal: Cleaning the text by removing unwanted characters. 
 
 ## Model Evaluation
 The models are evaluated using accuracy and confusion matrices to assess performance. The best-performing model (DistilBERT) achieved a significant improvement in accuracy compared to traditional models (BoW with Random Forest).
